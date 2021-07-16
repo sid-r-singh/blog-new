@@ -1,4 +1,4 @@
-name: Build Hugo site
+name: Build & Deploy to Staging
 
 on:
   push:
