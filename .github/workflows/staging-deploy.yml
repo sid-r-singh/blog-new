@@ -5,7 +5,7 @@ on:
     branches:
       - main
 #  workflow_dispatch:
-    # manual run
+
 
 jobs:
   deploy:
