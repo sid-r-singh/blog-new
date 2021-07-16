@@ -35,12 +35,12 @@ jobs:
             ${{ runner.os }}-hugomod-
 
       - name: Build
-        run: hugo --gc --verbose
+        run: hugo --config configStaging.yml --gc --verbose
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PAT_EXT_REPO_COMMIT_VIA_GITHUB_ACTION }}
           publish_dir: ./public
-          external_repository: sid-r-singh/sid
+          external_repository: sid-r-singh/staging-sid-one
           full_commit_message: Build by GH action 🚀 
