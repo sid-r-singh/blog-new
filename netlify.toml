@@ -1,0 +1,27 @@
+# Production context:
+# All deploys from the main repository branch
+# will inherit these settings.
+[context.production]
+  command = "hugo --gc"
+  [context.production.environment]
+    HUGO_VERSION = "0.85.0"
+
+# Deploy Preview context:
+# All deploys generated from a pull/merge request
+# will inherit these settings.
+
+[context.deploy-preview]
+command = "hugo --environment staging -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.85.0"
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+
+[context.branch-deploy]
+command = "hugo --environment staging --gc -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.85.0"
