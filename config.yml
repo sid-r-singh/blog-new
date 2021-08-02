@@ -37,7 +37,9 @@ languages:
                 - name: Tags
                   url: tags
                 - name: About me    
-                  url: more-about-me/ 
+                  url: more-about-me/
+                - name: Timeline
+                  url: https://timeline.sid.one
                   
         menu:
             main:

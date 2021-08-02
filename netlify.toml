@@ -21,7 +21,7 @@ HUGO_VERSION = "0.85.0"
 # or from the production branch will inherit these settings.
 
 [context.branch-deploy]
-command = "hugo --environment staging --gc -b $DEPLOY_PRIME_URL"
+command = "hugo --environment staging --gc -b https://dev.sid.one"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.85.0"
