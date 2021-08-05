@@ -1,6 +1,6 @@
 ---
 author: "Sidharth"
-title: "Notes on git from a course I took on Coursera"
+title: "Git folders, remotes & clones"
 date: "2021-07-16"
 description: "Deep dive into git clone & remote repos"
 tags: ["git"]
@@ -24,8 +24,7 @@ The two repositories can then be synchronized using aliases instead of URLs.
 As an example, let's say that we have an existing local repository named X, containing commits that we would like to push to a remote repository. We can log into GitHub and create a new repository named X. Then from our existing local repository, we execute the `git remote add` command. In this example, we name our remote repository origin and we specify the URL copied from GitHub. 
 
 ## Clones
-
-The name for the remote URL is created when you execute git clone. To understand this better let's clone a repo & then change into the repo's directory.
+Coning refers to the act of creating local copy of a repository (remote one). Note that the name or alias (usually **origin**) for the remote URL is automatically created when you execute git clone. To understand this better let's clone a repo & then change into the repo's directory.
 ```bash
 git clone https://github.com/sid-r-singh/firebase-auth.git
 cd .\firebase-auth\
