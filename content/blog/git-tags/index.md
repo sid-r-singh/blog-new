@@ -28,7 +28,7 @@ git tag -a v1.9 -m "Software version 1.9"
 - `-m` specifies a tagging message, related to the tag. Just like commit messages, if you don’t specify any message, Git launches the default editor for you to type it in.
 
 ## Lightweight tags
-As the name suggests, these tags don't store any mata data & that's why aptly named as lightweight (from storage perspective).
+As the name suggests, these tags don't store any meta data & that's why aptly named as lightweight (from storage perspective).
 
 ### Creating lightweight tags
 To create a lightweight tag, just don’t supply any of the -a, -s, or -m flags. You need to provide a tag name only.
