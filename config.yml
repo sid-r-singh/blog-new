@@ -30,7 +30,7 @@ languages:
             imageTitle: Sidharth Ranasingh
             imageWidth: 160
             imageHeight: 160
-            subtitle: "Fervently enthusiastic about web dev, cloud & IOT. This is a place on the 🌍 where I put all that 🔆 me."
+            subtitle: "Fullstack developer with interest in cloud & IOT. This is a place on the 🌍 where I put all that 🔆 me."
             buttons:
                 - name: Blog
                   url: blog
@@ -77,6 +77,7 @@ params:
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowToc: true
+    ShowCodeCopyButtons: true
     # comments: false
     images: ["papermod-cover.png"]
 
